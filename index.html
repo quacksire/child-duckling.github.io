@@ -135,6 +135,29 @@
   <script src="js/what-input.min.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>$(document).foundation();</script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBzpcrV4NMV9aykkWAkXyFh3HeCU2HCQfQ",
+    authDomain: "duckling-pw.firebaseapp.com",
+    databaseURL: "https://duckling-pw.firebaseio.com",
+    projectId: "duckling-pw",
+    storageBucket: "duckling-pw.appspot.com",
+    messagingSenderId: "523637724206",
+    appId: "1:523637724206:web:2d750c121330c21053fbbf",
+    measurementId: "G-S9BKFRPYNB"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>
