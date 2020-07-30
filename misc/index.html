@@ -10,8 +10,7 @@
           if(file.name == "index.html" || file.name == ".htaccess"){
             
           }else{
-            file.path.replace("misc/","")
-            htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
+            htmlString += `<li><a href="${file.name}">${file.name}</a></li>`;
           }
         }
         htmlString += '</ul>';
