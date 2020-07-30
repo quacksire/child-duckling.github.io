@@ -13,8 +13,8 @@
           }
         }
         htmlString += '</ul>';
-        document.getElementsByTagName('body')[0].innerHTML = htmlString;
-        document.getElementsByTagName('head')[0].innerHTML = <head><strong>Index of "${file.path}"</head></strong>
+        document.getElementsByTagName('body')[0].innerHTML = <head><strong>Index of "${file.path}"</head></strong>;
+        document.getElementsByTagName('body')[0].innerHTML += htmlString;
       })()
     </script>
   <body>
