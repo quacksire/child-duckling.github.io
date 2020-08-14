@@ -5,7 +5,7 @@
 <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="css/m-styles.min.css" type="text/css">
 </head>
 
 <style>
@@ -14,7 +14,7 @@ body {
 
 	background-image: url('grunge_patterns.jpg');
 	background-attachment: fixed;
-	color: #53BDE8;
+	color: #75ff71;
 }
 
 .box {
@@ -72,8 +72,8 @@ div.vertical {
 			<div class="vertical">
 				<div class="box">
 					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" onclick="checkPswd();" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
+					<button class="m-btn blue rnd" id="loginbutton" onclick="checkPswd();" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">Try Again</p>
 				</div>
 			</div>
 		</div>
@@ -88,7 +88,7 @@ div.vertical {
 
 	<script type="text/javascript">
 		function checkPswd() {
-			var confirmPassword = "b5kids";
+			var confirmPassword = "b3kids";
 			var password = document.getElementById("password").value;
 			if (password == confirmPassword) {
 				window.location="https://sites.google.com/cabrillo.k12.ca.us/b5-online/379e75c850e1334ef7bece52694c2f26cebec78f";
