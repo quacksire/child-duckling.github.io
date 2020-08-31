@@ -1,4 +1,1 @@
-RewriteEngine On
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule ^([^.]+)$ $1.html [NC,L]
-Redirect 301 /back.html https://duckling.pw
+Options All +Indexes
