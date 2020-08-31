@@ -73,15 +73,22 @@ div.vertical {
             </h1>
             <h3> <span style="color: #fdfdfd;">Pick your class for their
                 sign-in page. </span></h3>
-            <div style="text-align: center;"><button class="m-btn red rnd" onclick=window.location(/B3.html);
-
-                type="button" id="otherbutton">Ms. _______</button>&nbsp;&nbsp;
-              or<button class="m-btn blue rnd" id="loginbutton" onclick="/B5.html"
-
-                type="button">Ms. Jeffs</button></div>
+            <div style="text-align: center;">
+              <button class="m-btn red rnd" onclick="left();" type="button" id="otherbutton">Ms. _______</button>
+              &nbsp;&nbsp;or
+              <button class="m-btn blue rnd" id="loginbutton" onclick="right();" type="button">Ms. Jeffs</button></div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+		function left() {
+			window.location="/B5.html";
+    }
+    function right(){
+     	window.location="/B3.html"
+    }
+      
+</script>
 </html>
