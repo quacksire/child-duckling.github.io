@@ -67,14 +67,14 @@ div.vertical {
       <div class="horizontal">
         <div class="vertical">
           <div class="box">&nbsp; <span style="color: white;"><span style="font-family: &quot;Segoe UI&quot;,Helvetica,Arial,sans-serif;"></span></span>
-            <h1> <span style="color: #fdfdfd;">Welcome to Second Grade!</span>
-            </h1>
-            <h3> <span style="color: #fdfdfd;">Pick your class for their
-                sign-in page. </span></h3>
-            <div style="text-align: center;"> <button class="m-btn red rnd" onclick="left();"
-                type="button" id="otherbutton">Ms. McFarland</button>
-              &nbsp;&nbsp; or<button class="m-btn blue rnd" id="loginbutton" onclick="right();"
-                type="button">Ms. Jeffs</button></div>
+            <h1 style="height: 13px;"> <span style="color: #fdfdfd;">Welcome to
+                Second Grade!</span> </h1>
+            <h3 style="margin-top: 3.7167px; height: 39px;"> <span style="color: #fdfdfd;">Pick
+                your class for their sign-in page. </span></h3>
+            <div style="text-align: center; margin-top: -15px; height: 45px;"> <button
+                class="m-btn red rnd" onclick="left();" type="button" id="otherbutton">Ms.
+                McFarland</button> &nbsp;&nbsp; or<button class="m-btn blue rnd"
+                id="loginbutton" onclick="right();" type="button">Ms. Jeffs</button></div>
           </div>
         </div>
       </div>
