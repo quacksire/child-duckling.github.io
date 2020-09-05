@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Zoom Opener</title>
+    <meta name="author" content="ChildDuckling">
+  </head>
+  <body>
+  </body>
+  <script>
+      let url = "zoommtg://us04web.zoom.us/join?action=join&confno=77560128496&pwd=cS9rM0ZKN3NhZzVlOW5yeUlEWVBEZz09&zc=0&mcv=0.92.11227.0929&confid=dXNzPWF0MVdqMDhsd2o0QTh0NnFvWHdQb2o1cG5rNUNMMVdTT3JlYmQzVUdGaDk4WFRZLWhWbGVVUUV4Q2d2NHlyZDVOSlczT1JhaWg2UG1nVmd0WFFkeVdUSzIuWUNuVWMxc3ZsM0poZHlpWSZ0aWQ9MWYxODI3ZDYxYmUyMGI5ZjE2M2NiZjg4MjAxZDk5NTQ%3D";
+      window.location.href = url;
+    	window.close();
+    </script>
+</html>
