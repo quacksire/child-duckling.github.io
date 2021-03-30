@@ -27,5 +27,5 @@ while (true) {
 
     ////////////////
 
-    document.getElementById("rainbow").style.backgroundColor('rgb(' + String(r) + ',' + String(g) + ',' + String(b) + ')')
+    document.getElementById("rainbow").style = 'background: rgb(' + String(r) + ',' + String(g) + ',' + String(b) + ')';
 }
