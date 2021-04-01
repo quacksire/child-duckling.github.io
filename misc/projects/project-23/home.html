@@ -41,14 +41,20 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://bestvpn.org/outdatedbrowser">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="container">
-        <p>Press Any Key</p>
+    <div class="container" id="main">
     </div>
     <script>
-        window.addEventListener('keydown', () => {
-            window.location.replace("https://youtu.be/dQw4w9WgXcQ?autoplay=1")
-        })
-        window.on
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            document.getElementById('main').innerHTML = "Tap Anywhere";
+            window.addEventListener('touchstart', () => {
+                window.location.replace("https://youtu.be/dQw4w9WgXcQ?autoplay=1");
+            });
+        } else {
+            document.getElementById('main').innerHTML = "Press Any Key";
+            window.addEventListener('keydown', () => {
+                window.location.replace("https://youtu.be/dQw4w9WgXcQ?autoplay=1");
+            })
+        };
     </script>
 </body>
 
