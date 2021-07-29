@@ -1,10 +1,20 @@
 <!DOCTYPE html> 
 <html> 
+<head>
+<style>
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+</style>
+</head>
 <body> 
 <video id="video1" width="2500" autoplay>
     <source src="./wideputin.mp4" type="video/mp4">
   </video>
 <script>
+window.scrollBy(35,50); // horizontal and vertical scroll increments
 let v = document.getElementById('video1');
 v.style.height = window.outerHeight;
 v.style.width = window.outerWidth;
