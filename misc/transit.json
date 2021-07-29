@@ -1,0 +1,166 @@
+{
+  "ServiceDelivery": {
+    "ResponseTimestamp": "2021-07-22T23:06:45Z",
+    "ProducerRef": "SM",
+    "Status": true,
+    "StopMonitoringDelivery": {
+      "version": "1.4",
+      "ResponseTimestamp": "2021-07-22T23:06:45Z",
+      "Status": true,
+      "MonitoredStopVisit": [
+        {
+          "RecordedAtTime": "2021-07-22T23:06:42Z",
+          "MonitoringRef": "315039",
+          "MonitoredVehicleJourney": {
+            "LineRef": "17",
+            "DirectionRef": "N",
+            "FramedVehicleJourneyRef": {
+              "DataFrameRef": "2021-07-22",
+              "DatedVehicleJourneyRef": "171024"
+            },
+            "PublishedLineName": "Linda Mar Park & Ride - Pescadero",
+            "OperatorRef": "SM",
+            "OriginRef": "315608",
+            "OriginName": "Miramontes Point Rd-Moonridge Apts",
+            "DestinationRef": "311106",
+            "DestinationName": "Linda Mar Park & Ride",
+            "Monitored": true,
+            "InCongestion": null,
+            "VehicleLocation": {
+              "Longitude": "-122.429298",
+              "Latitude": "37.45224"
+            },
+            "Bearing": null,
+            "Occupancy": null,
+            "VehicleRef": "2955",
+            "MonitoredCall": {
+              "StopPointRef": "315039",
+              "StopPointName": "Main / Miramontes",
+              "VehicleLocationAtStop": "",
+              "VehicleAtStop": "",
+              "AimedArrivalTime": "2021-07-22T23:07:37Z",
+              "ExpectedArrivalTime": "2021-07-22T23:09:00Z",
+              "AimedDepartureTime": "2021-07-22T23:07:37Z",
+              "ExpectedDepartureTime": "2021-07-22T23:09:00Z",
+              "Distances": ""
+            }
+          }
+        },
+        {
+          "RecordedAtTime": "1970-01-01T00:00:00Z",
+          "MonitoringRef": "315039",
+          "MonitoredVehicleJourney": {
+            "LineRef": "294",
+            "DirectionRef": "E",
+            "FramedVehicleJourneyRef": {
+              "DataFrameRef": "2021-07-22",
+              "DatedVehicleJourneyRef": "2941016"
+            },
+            "PublishedLineName": "SM Med Ctr - Hillsdale - CSM - Half Moon Bay",
+            "OperatorRef": "SM",
+            "OriginRef": "315033",
+            "OriginName": "Main St & Poplar St",
+            "DestinationRef": "341621",
+            "DestinationName": "San Mateo Medical Center",
+            "Monitored": true,
+            "InCongestion": null,
+            "VehicleLocation": {
+              "Longitude": "",
+              "Latitude": ""
+            },
+            "Bearing": null,
+            "Occupancy": null,
+            "VehicleRef": null,
+            "MonitoredCall": {
+              "StopPointRef": "315039",
+              "StopPointName": "Main / Miramontes",
+              "VehicleLocationAtStop": "",
+              "VehicleAtStop": "",
+              "AimedArrivalTime": "2021-07-22T23:15:47Z",
+              "ExpectedArrivalTime": null,
+              "AimedDepartureTime": "2021-07-22T23:15:47Z",
+              "ExpectedDepartureTime": "2021-07-22T23:26:00Z",
+              "Distances": ""
+            }
+          }
+        },
+        {
+          "RecordedAtTime": "1970-01-01T00:00:00Z",
+          "MonitoringRef": "315039",
+          "MonitoredVehicleJourney": {
+            "LineRef": "17",
+            "DirectionRef": "N",
+            "FramedVehicleJourneyRef": {
+              "DataFrameRef": "2021-07-22",
+              "DatedVehicleJourneyRef": "171026"
+            },
+            "PublishedLineName": "Linda Mar Park & Ride - Pescadero",
+            "OperatorRef": "SM",
+            "OriginRef": "315608",
+            "OriginName": "Miramontes Point Rd-Moonridge Apts",
+            "DestinationRef": "311106",
+            "DestinationName": "Linda Mar Park & Ride",
+            "Monitored": true,
+            "InCongestion": null,
+            "VehicleLocation": {
+              "Longitude": "",
+              "Latitude": ""
+            },
+            "Bearing": null,
+            "Occupancy": null,
+            "VehicleRef": null,
+            "MonitoredCall": {
+              "StopPointRef": "315039",
+              "StopPointName": "Main / Miramontes",
+              "VehicleLocationAtStop": "",
+              "VehicleAtStop": "",
+              "AimedArrivalTime": "2021-07-23T00:07:37Z",
+              "ExpectedArrivalTime": "2021-07-23T00:07:00Z",
+              "AimedDepartureTime": "2021-07-23T00:07:37Z",
+              "ExpectedDepartureTime": "2021-07-23T00:07:00Z",
+              "Distances": ""
+            }
+          }
+        },
+        {
+          "RecordedAtTime": "1970-01-01T00:00:00Z",
+          "MonitoringRef": "315039",
+          "MonitoredVehicleJourney": {
+            "LineRef": "294",
+            "DirectionRef": "E",
+            "FramedVehicleJourneyRef": {
+              "DataFrameRef": "2021-07-22",
+              "DatedVehicleJourneyRef": "2941018"
+            },
+            "PublishedLineName": "SM Med Ctr - Hillsdale - CSM - Half Moon Bay",
+            "OperatorRef": "SM",
+            "OriginRef": "315033",
+            "OriginName": "Main St & Poplar St",
+            "DestinationRef": "341621",
+            "DestinationName": "San Mateo Medical Center",
+            "Monitored": true,
+            "InCongestion": null,
+            "VehicleLocation": {
+              "Longitude": "",
+              "Latitude": ""
+            },
+            "Bearing": null,
+            "Occupancy": null,
+            "VehicleRef": null,
+            "MonitoredCall": {
+              "StopPointRef": "315039",
+              "StopPointName": "Main / Miramontes",
+              "VehicleLocationAtStop": "",
+              "VehicleAtStop": "",
+              "AimedArrivalTime": "2021-07-22T00:15:47Z",
+              "ExpectedArrivalTime": null,
+              "AimedDepartureTime": "2021-07-23T00:15:47Z",
+              "ExpectedDepartureTime": "2021-07-23T00:15:00Z",
+              "Distances": ""
+            }
+          }
+        }
+      ]
+    }
+  }
+}
