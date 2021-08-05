@@ -1,23 +1,26 @@
 <!DOCTYPE html> 
-<html> 
+<html onresize="document.getElementById('video1').width = window.outerWidth; document.getElementById('video1').height = window.outerHeight;"> 
 <head>
 <style>
 body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: transparent;
 }
+video {
+  height: 120%;
+  width: 180%;
+}
+
 
 </style>
 </head>
 <body> 
-<video id="video1" width="2500" autoplay>
+<video id="video1" autoplay>
     <source src="./wideputin.mp4" type="video/mp4">
   </video>
 <script>
-window.scrollBy(35,50); // horizontal and vertical scroll increments
-let v = document.getElementById('video1');
-v.style.height = window.outerHeight;
-v.style.width = window.outerWidth;
+window.scrollBy(75,50); // horizontal and vertical scroll increments
 </script>
 
 </body> 
