@@ -5,22 +5,25 @@
 body {
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-color: transparent;
-}
-video {
-  height: 120%;
-  width: 180%;
+  background-color: black;
 }
 
 
 </style>
 </head>
 <body> 
-<video id="video1" autoplay>
-    <source src="./wideputin.mp4" type="video/mp4">
+<video id="video1" autoplay style="object-fit: fill; width:100%; height: 100%;">
+    <source src="./wideputin.mp4" type="video/mp4" >
   </video>
 <script>
-window.scrollBy(75,50); // horizontal and vertical scroll increments
+if (window.name != 'PUTIN') {
+    window.open(location.href, `PUTIN`, config="height=300, width=800, resizable=yes, location=no, autoplay=yes")
+}
+
+window.addEventListener('resize', function(event) {
+    window.scrollBy(5,10)// horizontal and vertical scroll increments
+}, true)
+//; 
 </script>
 
 </body> 
