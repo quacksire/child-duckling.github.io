@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Top Model</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .leftside {
+            background-size: cover;
+            background-position: center;
+            height: 100Vh;
+            border-width: 10px;
+            border-color: rgb(255, 255, 255);
+            border-radius: 50px;
+        }
+        
+        .leftside .text {
+            position: absolute;
+            top: 60%;
+            left: 20%;
+            font-size: 2em;
+        }
+        
+        .leftside .text a {
+            color: #fff;
+            display: block;
+        }
+        
+        .rightside {
+            background-size: cover;
+            background-position: center;
+            height: 100Vh;
+        }
+        
+        .row-full>[class*='col-'] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        @media (max-width: 767px) {
+            .leftside .text {
+                top: 60%;
+                left: 5%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row row-full">
+            <div class="col-sm-6">
+                <div class="leftside">
+
+                    <ul class="list-group w-50 p-5" id="placements">
+                        <h1 class="text-white text-center">Placements</h1>
+                        <li class="list-group-item d-flex justify-content-between align-items-center active">
+                            <div id="first">loading..</div>
+                            <span class="badge badge-primary badge-pill" id="first-points">1</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="second"></div> <span class="badge badge-primary badge-pill text-black" id="second-points">1</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="third"></div> <span class="badge badge-primary badge-pill text-black" id="third-points">1</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="forth"></div> <span class="badge badge-primary badge-pill text-black" id="forth-points">1</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="fifth"></div> <span class="badge badge-primary badge-pill text-black" id="fifth-points">1</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="sixth"></div> <span class="badge badge-primary badge-pill text-black" id="sixth-points">1</span></li>
+                    </ul>
+                    <hr>
+                    <ul class="list-group w-50 p-5" id="add-points">
+                        <h1 class="text-white text-center">Add Points</h1>
+                        <li class="list-group-item d-flex justify-content-between align-items-center text-white active">
+                            <div id="first">loading..</div>
+                            <span class="badge badge-primary badge-pill"><input type="number" id="add-first"></span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="second"></div> <span class="badge badge-primary badge-pill text-black"><input type="number" id="add-second"></span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="third"></div> <span class="badge badge-primary badge-pill text-black"><input type="number" id="add-third"></span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="forth"></div> <span class="badge badge-primary badge-pill text-black"><input type="number" id="add-forth"></span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="fifth"></div> <span class="badge badge-primary badge-pill text-black"><input type="number" id="add-fifth"></span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div id="sixth"></div> <span class="badge badge-primary badge-pill text-black"><input type="number" id="add-sixth"></span></li>
+                        <a id="add-button" class="btn btn-outline-primary" href="#" role="button">Add</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="rightside">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" async defer>
+</script>
+</body>
+
+</html>
