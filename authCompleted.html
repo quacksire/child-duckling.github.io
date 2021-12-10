@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./node_modules/@primer/css/dist/primer.css" />
+</head>
+
+<body>
+
+
+    <div class="Box Box--spacious col-6 mx-auto text-center">
+        <form>
+            <div class="Box-body">
+                <h3 class="f1-light" id='blank'>
+                    Auth
+                </h3>
+                <div class="form-group mb-4" id="copytext">
+                    <div class="form-group-header"><label>Copy this string and paste it into whatever is asking you to</label></div>
+                    <div class="form-group-body"><input id="string" class="form-control" type="text" /></div>
+                </div>
+                <button class="btn btn-block btn-primary" id='copy'>
+        Copy
+      </button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var code = new URL(window.location.href).searchParams.get('code')
+        if (!code) {
+            document.getElementById('blank').innerHTML = 'Copied!';
+            document.getElementById('copy').remove();
+            document.getElementById('copytext').remove();
+        }
+
+
+        if (!code.endsWith('#_')) {
+            code = code + '#_'
+        }
+
+        document.getElementById('string').value = code
+        document.getElementById('copy').onclick = function() {
+            document.getElementById('copy').innerHTML = 'Copied!'
+            document.getElementById('copy').className = 'btn btn-block'
+            copyTextToClipboard(code);
+
+
+        }
+        async function copyTextToClipboard(text) {
+            try {
+                await navigator.clipboard.writeText(text);
+                document.getElementById('copy').innerHTML = 'Copied!'
+                document.getElementById('copy').className = 'btn btn-block'
+
+
+            } catch (err) {
+                alert('Error in copying text: ', err);
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

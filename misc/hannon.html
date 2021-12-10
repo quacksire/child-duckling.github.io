@@ -1,0 +1,37 @@
+<!DOCCTYPE html>
+<head>
+  <script>
+    function display() {
+      var col=document.getElementById("demo");
+      col.style.color=`#${Math.floor(Math.random()*16777215).toString(16)}`;
+      col.style.borderColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+      col.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+    } 
+  </script>
+  <style>
+  .center {
+    margin: auto;
+    width: 50%;
+    border: 100px solid green;
+    padding: 10px;
+  }
+  </style>
+</head>
+<body id="demo" class="center">
+	<ul>  
+    <code id="name"></code> is the <b>best</b>  
+  </ul>
+</body>
+<script>
+  var name = new URL(window.location.href).searchParams.get('name')
+  document.getElementById("name").innerHTML = String(name)
+  setInterval(display, 1); //1000 = 1 second
+</script>
+
+
+
+
+
+
+
+

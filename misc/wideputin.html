@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<style>
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: black;
+}
+
+
+</style>
+</head>
+<body> 
+<video id="video1" autoplay style="object-fit: fill; width:100%; height: 100%;">
+    <source src="./wideputin.mp4" type="video/mp4" >
+  </video>
+<script>
+if (window.name != 'PUTIN') {
+    window.open(location.href, `PUTIN`, config="height=300, width=800, resizable=yes, location=no, autoplay=yes")
+}
+
+window.addEventListener('resize', function(event) {
+    window.scrollBy(5,10)// horizontal and vertical scroll increments
+}, true)
+//; 
+</script>
+
+</body> 
+</html>
