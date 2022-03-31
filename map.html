@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cobbler</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+</head>
+<body style="padding: 0; margin: 0; overflow: hidden">
+<div id="map" style="width: 100vw; height: 100vh;"></div>
+<script>
+    const {ipcRenderer} = require('electron');
+    mapkit.init({ authorizationCallback: function(done) {
+        done("eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjdLNjk2OEI1MlMifQ.eyJpc3MiOiI4UjIzSjI4MzVEIiwiaWF0IjoxNjQ4NTkxMjgyLjE1NiwiZXhwIjoxNjQ4NzcxMjgyLjE1Nn0.IkzsjJFULtHb1J5rpe7EXa0dwowY3fMbAUPn7043qjjCVWvUKA4vl-5qNlpbd53AajL5SOKCS5FplqeL3r3Yzw")
+        }});
+
+    let map;
+
+    ipcRenderer.send('get-location');
+    //ipcRenderer.on('location', (event, arg) => {
+    //    console.log(arg);
+        let lat = parseFloat(String(arg.loc).split(',')[0])
+        let long = parseFloat(String(arg.loc).split(',')[1])
+        console.log(lat, long);
+        const center = new mapkit.Coordinate(lat, long);
+
+        map = new mapkit.Map("map", {
+            center: center,
+            colorScheme: "dark",
+            isZoomEnabled: true,
+            isScrollEnabled: true,
+            showsMapTypeControl: true,
+            showsUserLocation: true,
+        });
+
+        const annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(lat, long), {
+            title: "Your Location",
+            glyphText: "📍",
+            color: "rgba(255,0,0,0)",
+            displayPriority: 1000,
+        });
+        map.addAnnotation(location);
+    //});
+</script>
+</body>
+</html>
